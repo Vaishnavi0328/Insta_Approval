@@ -1,4 +1,4 @@
 package com.project.InstaApproval.service;
 
-public interface LoanService {
+public class LoanServiceImpl {
 }
