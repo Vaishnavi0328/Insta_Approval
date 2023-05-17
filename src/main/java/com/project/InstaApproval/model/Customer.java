@@ -147,8 +147,6 @@ public class Customer implements Serializable {
         this.loans = loans;
     }
 
-    // the method below will add Loan to LoansList
-    // also serves the purpose to avoid cyclic references.
     public void addLoan(Loan loan) {
         loan.setCustomer(this); // this will avoid nested cascade
         this.getLoans().add(loan);
